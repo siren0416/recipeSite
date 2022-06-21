@@ -42,20 +42,20 @@
 		<ul class="amount">
 			<li>
 				<div>
-					<div class="contents1">오늘의 랜덤 레시피</div>
-					<div><button>클릭</button></div>
+					<div class="contents1">등록된 레시피 갯수</div>
+					<div>갯수확인</div>
 				</div>
 			</li>
 			<li>
 				<div>
-					<div class="contents1">전체 레시피</div>
-					<div><button>클릭</button></div>
+					<div class="contents1">관심 있는 레시피</div>
+					<div>갯수확인</div>
 				</div>			
 			</li>
 			<li>
 				<div>
 					<div class="contents1">내 레시피</div>
-					<div><button>클릭</button></div>
+					<div>등록된 레시피 갯수</div>
 				</div>
 			</li>
 			<li>
@@ -65,8 +65,23 @@
 				</div>
 			</li>
 		</ul>
-
-
+		
+		<!-- amount end -->
+		
+		<!-- menu insert start -->
+		<div class="main_text0">
+			<h1>ABOUT</h1>
+				<div class="contents1">사이트 관련 옵션 내용 말로 알려준다</div>
+			
+			<ul class="icons">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			
+			
+		</div>
+			
 
 
 

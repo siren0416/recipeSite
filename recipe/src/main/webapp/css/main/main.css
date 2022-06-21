@@ -55,7 +55,7 @@ button{
 }
 
 .search_area{
-	width: 300px;
+	width: 400px;
     height: 40px;
     background: rgba(0,0,0,0.5);
     border-radius: 5px;
@@ -64,7 +64,7 @@ button{
 
 .search_area > form > input{
 	border: none;
-	width: 250px;
+	width: 310px;
 	height: 40px;
 	background: rgba(0,0,0,0.0);
 	color: #fff;
@@ -81,7 +81,7 @@ button{
 .nav{
 	display: flex;
     line-height: 40px;
-	width: 700px;
+	width: 750px;
     height: 40px;
     margin-top: 50px;
     margin-left: 230px;
@@ -96,8 +96,8 @@ button{
 
 .nav > li > a{
 	color: #fff;
-	background: rgba(0,0,0,0.0);
 	font-size: 20px;
+	border-radius: 10px;
 }
 
 .amount{
@@ -128,12 +128,39 @@ button{
 }
 
 
+/* main_text0 */
 
+.main_text0{
+	width: 100%;
+	height: 600px;
+	margin-top: -132px;
+	background: #f1f2f3;
+	
+}
 
+.main_text0 > h1{
+	padding-top:116px;
+	text-align: center;
+	background: skyblue;
+}
 
+.main_text0 > .contents1 {
+	text-align: center;
+}
 
+.icons{
+	display: flex;
+	margin:auto;
+	width: 1280px;
+	height: 302px;
+	background: orange;
+}
 
-
+.icons > li{
+	flex:1;
+	height: 302px;
+	background: blue;
+}
 
 
 

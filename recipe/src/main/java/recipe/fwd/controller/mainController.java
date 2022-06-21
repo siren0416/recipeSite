@@ -15,7 +15,7 @@ public class mainController {
 	@Autowired
 	private TestService testService;
 	
-	// Test 메인화면 호출
+	// main 메인화면 호출
 	@GetMapping("/main")
 	public String testPage() {
 		return "main";
