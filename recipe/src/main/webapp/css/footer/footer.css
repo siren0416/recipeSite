@@ -1,0 +1,20 @@
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+.footer_image{
+	text-align:center;
+	width: 100%;
+	height: 418px;
+	background-image: url('/images/main/footer.jpg');
+}
+
+div:first-child{
+	text-align: center;
+	color: #fff;
+}

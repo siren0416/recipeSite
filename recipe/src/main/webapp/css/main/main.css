@@ -18,6 +18,16 @@ h1{
 	padding-bottom: 10px;
 }
 
+.contents1_bold{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.contents2{
+	font-weight: 100;
+	font-size: 14px;
+}
+
 button{
 	background-color: skyblue;
   border: none;
@@ -141,7 +151,6 @@ button{
 .main_text0 > h1{
 	padding-top:116px;
 	text-align: center;
-	background: skyblue;
 }
 
 .main_text0 > .contents1 {
@@ -153,14 +162,85 @@ button{
 	margin:auto;
 	width: 1280px;
 	height: 302px;
-	background: orange;
 }
 
 .icons > li{
 	flex:1;
 	height: 302px;
-	background: blue;
+	background: white;
+	margin-top: 49px;
+	text-align: center;
 }
+
+.icons > li > .icon_img{
+	margin-top: 18px;
+}
+
+.icons > li:not(:last-child){
+	margin-right: 20px;
+}
+
+.icons .contents2{
+	width: 240px;
+	margin: 10px auto;
+	
+}
+
+.more{
+	width:100px;
+	height: 30px;
+	background: #2F7AF4;
+	color: #fff;
+	font-size: 13px;
+	line-height: 30px;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+/* menu2 */
+
+.main_text1{
+	width:100%;
+	height:659px;
+}
+
+.main_text1 > h1{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.main_text1 > .contents1{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.service {
+	text-align: center;
+	width: 1280px;
+	display: flex;
+	margin: 45px auto;
+	height: 428px;
+	background: skyblue;
+}
+.service > .youtube1{
+	flex:1;
+}
+.service > .youtube2{
+	flex:1;
+	padding-left: 20px;
+}
+
+/* menu3 */
+.footer{
+	text-align:center;
+	width: 100%;
+	height: 418px;
+	background-image: url('/images/main/footer.jpg');
+}
+
+
+
+
 
 
 
