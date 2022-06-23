@@ -8,12 +8,15 @@
 </head>
 <body>
 <!-- footerimage start -->
-	<div class="footer_image"></div>
-	<div>
-		LOGO
-	</div>
-	<div>
-		asdfsdfdsf
-	</div>
+	
+	<footer>
+		<div>LOGO</div>
+		<div>
+		CEO. 김 대 표<br>
+		Addr. 서울특별시 구로구 오류동 123-126 호상빌딩 5차 14F 고객상담실<br> 
+		Fax/Tel. 02 - 123 -4567~5 <br>
+		COPYRIGHT 2022. SANG. ALL RIGHT RESERVED.
+		</div>
+	</footer>
 </body>
 </html>

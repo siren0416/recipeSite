@@ -9,12 +9,29 @@
 }
 .footer_image{
 	text-align:center;
-	width: 100%;
+	width: 1920px;
 	height: 418px;
 	background-image: url('/images/main/footer.jpg');
 }
 
-div:first-child{
+footer{
+	display: flex;
+	background: #1f1f1f;
+	padding:30px;
+}
+
+footer > div:first-child {
+	flex: 3;
 	text-align: center;
 	color: #fff;
 }
+
+footer > div:last-child {
+	flex:9;
+	color: #fff;
+}
+
+
+
+
+
