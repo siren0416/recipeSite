@@ -1,0 +1,24 @@
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+
+.register_box{
+	margin:50px auto;
+	display:flex;
+	width: 500px;
+	height: 500px;
+	background: orange;
+}
+
+.col-lg-10{
+	width: 600px;
+}
+input{
+	width: 500px;
+}
