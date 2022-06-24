@@ -8,13 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>회원가입</title>
         <!-- Bootstrap -->
-       <!--  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한)
+       <!--  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한) -->
         <script src="http://code.jquery.com/jquery.js"></script>
-        모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요
+        <!-- 모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요 -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        Respond.js 으로 IE8 에서 반응형 기능을 활성화하세요 (https://github.com/scottjehl/Respond)
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
+        <!-- Respond.js 으로 IE8 에서 반응형 기능을 활성화하세요 (https://github.com/scottjehl/Respond) -->
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<link href="css/header/header.css" rel="stylesheet">
 		<link href="css/register/register.css" rel="stylesheet">
 		<link href="css/footer/footer.css" rel="stylesheet">
@@ -58,18 +58,18 @@
            
             <!-- 본문 들어가는 부분 -->
  
-            <form class="form-horizontal" role="form" method="post" action="javascript:alert( 'success!' );">
+            <form id="insertReg" class="form-horizontal" role="form" method="post" action="insertReg">
                 
                 <div class="form-group" id="divId">
                     <label for="inputId" class="col-lg-2 control-label">아이디</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control onlyAlphabetAndNumber" id="id" data-rule-required="true" placeholder="30자이내의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다." maxlength="30">
+                        <input type="text" class="form-control onlyAlphabetAndNumber" id="m_id" name="m_id" data-rule-required="true" placeholder="30자이내의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다." maxlength="30">
                     </div>
                 </div>
                 <div class="form-group" id="divPassword">
                     <label for="inputPassword" class="col-lg-2 control-label">패스워드</label>
                     <div class="col-lg-10">
-                        <input type="password" class="form-control" id="password" name="excludeHangul" data-rule-required="true" placeholder="패스워드" maxlength="30">
+                        <input type="password" class="form-control" id="m_pw" name="m_pw" data-rule-required="true" placeholder="패스워드" maxlength="30">
                     </div>
                 </div>
                 <div class="form-group" id="divPasswordCheck">
@@ -81,33 +81,26 @@
                 <div class="form-group" id="divName">
                     <label for="inputName" class="col-lg-2 control-label">이름</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control onlyHangul" id="name" data-rule-required="true" placeholder="한글만 입력 가능합니다." maxlength="15">
-                    </div>
-                </div>
-                
-                <div class="form-group" id="divNickname">
-                    <label for="inputNickname" class="col-lg-2 control-label">별명</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="nickname" data-rule-required="true" placeholder="별명" maxlength="15">
+                        <input type="text" class="form-control onlyHangul" id="m_name" name="m_name" data-rule-required="true" placeholder="한글만 입력 가능합니다." maxlength="15">
                     </div>
                 </div>
                 
                 <div class="form-group" id="divEmail">
                     <label for="inputEmail" class="col-lg-2 control-label">이메일</label>
                     <div class="col-lg-10">
-                        <input type="email" class="form-control" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
+                        <input type="email" class="form-control" name="m_name" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
                     </div>
                 </div>
                 <div class="form-group" id="divPhoneNumber">
                     <label for="inputPhoneNumber" class="col-lg-2 control-label">휴대폰 번호</label>
                     <div class="col-lg-10">
-                        <input type="tel" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
+                        <input type="tel" name="m_phone" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPhoneNumber" class="col-lg-2 control-label">성별</label>
                     <div class="col-lg-10">
-                        <select class="form-control" id="gender">
+                        <select class="form-control" name="m_gender"  id="gender">
                             <option value="M">남</option>
                             <option value="F">여</option>
                         </select>
