@@ -72,12 +72,12 @@
                         <input type="password" class="form-control" id="m_pw" name="m_pw" data-rule-required="true" placeholder="패스워드" maxlength="30">
                     </div>
                 </div>
-                <div class="form-group" id="divPasswordCheck">
+<!--                 <div class="form-group" id="divPasswordCheck">
                     <label for="inputPasswordCheck" class="col-lg-2 control-label">패스워드 확인</label>
                     <div class="col-lg-10">
                         <input type="password" class="form-control" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group" id="divName">
                     <label for="inputName" class="col-lg-2 control-label">이름</label>
                     <div class="col-lg-10">
@@ -88,7 +88,7 @@
                 <div class="form-group" id="divEmail">
                     <label for="inputEmail" class="col-lg-2 control-label">이메일</label>
                     <div class="col-lg-10">
-                        <input type="email" class="form-control" name="m_name" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
+                        <input type="email" class="form-control" name="m_email" id="m_email" data-rule-required="true" placeholder="이메일" maxlength="40">
                     </div>
                 </div>
                 <div class="form-group" id="divPhoneNumber">
@@ -100,7 +100,7 @@
                 <div class="form-group">
                     <label for="inputPhoneNumber" class="col-lg-2 control-label">성별</label>
                     <div class="col-lg-10">
-                        <select class="form-control" name="m_gender"  id="gender">
+                        <select class="form-control" name="m_gender"  id="m_gender">
                             <option value="M">남</option>
                             <option value="F">여</option>
                         </select>
@@ -122,7 +122,7 @@
       
       
       
-        <script>
+        <!-- <script>
         
             $(function(){
                 //모달을 전역변수로 선언
@@ -403,7 +403,7 @@
                 
             });
             
-        </script>
+        </script> -->
                 <!--// 본문 들어가는 부분 -->
             <hr/>
 </body>

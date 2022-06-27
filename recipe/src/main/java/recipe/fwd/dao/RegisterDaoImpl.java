@@ -17,5 +17,7 @@ public class RegisterDaoImpl implements RegisterDao{
 	@Override
 	public void insertReg(MemberVo memberVo) throws Exception{
 		RegisterMapper mapper = sqlSession.getMapper(RegisterMapper.class);
+		mapper.insertReg(memberVo);
+		
 	}
 }

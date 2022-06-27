@@ -24,7 +24,7 @@ public class registerController {
 	}
 	
 	// 회원 가입 인서트
-	@RequestMapping(value="insertreg", method = RequestMethod.POST)
+	@RequestMapping(value="insertReg", method = RequestMethod.POST)
 	public String insertreg(MemberVo memberVo, Model model) throws Exception{
 		System.out.println("insertregController");
 		System.out.println(memberVo.getM_id());
