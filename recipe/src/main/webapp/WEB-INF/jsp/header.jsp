@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,8 +26,16 @@
 						<li><a href="main">HOME</a></li>
 						<li><a href="/">레시피 검색</a></li>
 						<li><a href="#">QNA</a></li>
-						<li><a href="#">MYPAGE</a></li>
-						<li><a href="login">로그인</a></li>
+						<li><a href="mypage">MYPAGE</a></li>
+						
+						<c:if test="${member == null }">
+							<li><a href="loginpage">로그인</a></li>
+						</c:if>
+						
+						<c:if test="${member != null }">
+							<li><a href="logout">로그아웃</a></li>
+						</c:if>
+						
 					</ul>
 				</div>
 			</div>

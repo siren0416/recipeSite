@@ -18,7 +18,7 @@
 		<link href="css/header/header.css" rel="stylesheet">
 		<link href="css/register/register.css" rel="stylesheet">
 		<link href="css/footer/footer.css" rel="stylesheet">
-<title>Insert title here</title>
+<title>mypage</title>
 </head>
 <body>
 <!-- intro start -->
@@ -38,7 +38,7 @@
 						<li><a href="main">HOME</a></li>
 						<li><a href="/">레시피 검색</a></li>
 						<li><a href="#">QNA</a></li>
-						<li><a href="#">MYPAGE</a></li>
+						<li><a href="mypage">MYPAGE</a></li>
 						<li><a href="loginpage">로그인</a></li>
 					</ul>
 				</div>
@@ -124,7 +124,7 @@
 	
       
       
-      
+      /*
          <script>
         
             $(function(){
@@ -406,7 +406,7 @@
                 
             });
             
-        </script> 
+        </script> */
                 <!--// 본문 들어가는 부분 -->
             <hr/>
 </body>

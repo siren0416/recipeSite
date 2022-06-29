@@ -2,9 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="recipe.fwd.service.RegisterMapper">
-	<insert id="insertReg">
-		INSERT INTO member (m_id, m_pw, m_name, m_email, m_phone, m_gender)
-		VALUES (#{m_id}, #{m_pw}, #{m_name}, #{m_email}, #{m_phone}, #{m_gender})
+
+	<!-- 아이디 중복 검사 -->
+	<select id="check_id" parameterType="String" resultType="int">
+		select count(*) from member where m_id = #{m_id}
+	</select>
+	
+	<!-- 이메일 중복 검사 -->
+	<select id="check_email" parameterType="String" resultType="int">
+		select count(*) from member where m_email = #{m_email}
+	</select>
+
+
+	<insert id="insertReg" parameterType="memberVo">
+		INSERT INTO member 
+		VALUES (#{m_id}, #{m_pw}, #{m_name}, #{m_email}, #{m_phone}, #{m_gender}, 'false' #{email_key}, now())
 	</insert>
 
 

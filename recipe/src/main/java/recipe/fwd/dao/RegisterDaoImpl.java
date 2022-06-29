@@ -20,4 +20,17 @@ public class RegisterDaoImpl implements RegisterDao{
 		mapper.insertReg(memberVo);
 		
 	}
+	
+	/*
+	 * // 아이디 중복 검사
+	 * 
+	 * @Override public int check_id(String m_id) throws Exception{ return
+	 * sqlSession.selectOne("memberVo.check_id", m_id); }
+	 * 
+	 * // 이메일 중복 검사
+	 * 
+	 * @Override public int check_email(String m_email) throws Exception{ return
+	 * sqlSession.selectOne("member.check_email", m_email); }
+	 */
+	
 }

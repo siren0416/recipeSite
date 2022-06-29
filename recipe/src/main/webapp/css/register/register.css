@@ -7,18 +7,20 @@
 	padding: 0px;
 	color: #000;
 }
-
+.container{
+	display: flex;
+	margin:auto;
+}
 .register_box{
 	margin:50px auto;
 	display:flex;
-	width: 500px;
-	height: 500px;
-	background: orange;
+	width: 400px;
+	height: 400px;
+	background: white;
+	border-radius: 10px;
+	
 }
 
-.col-lg-10{
-	width: 600px;
-}
-input{
-	width: 500px;
+.div_input > input{
+	width: 200px;
 }

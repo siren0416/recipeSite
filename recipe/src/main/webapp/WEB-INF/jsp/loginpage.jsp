@@ -33,15 +33,13 @@
 				</div>
 		<div class="container">
 			<section id="content">
-				<form action="">
+				<form action="login" method="post">
 					<h1>로그인</h1>
 					<div>
-						<input type="text" placeholder="Username" required=""
-							id="username" />
+						<input type="text" placeholder="UserID" name="m_id" id="m_id" />
 					</div>
 					<div>
-						<input type="password" placeholder="Password" required=""
-							id="password" />
+						<input type="password" placeholder="Password" name="m_pw" id="m_pw" />
 					</div>
 					<div>
 						<input type="submit" value="로그인" /> <a href="#">비밀 번호 찾기</a> <a href="register">회원가입</a>

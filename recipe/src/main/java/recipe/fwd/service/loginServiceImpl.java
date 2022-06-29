@@ -1,5 +1,6 @@
 package recipe.fwd.service;
 
+
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletResponse;
@@ -7,21 +8,20 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import recipe.fwd.dao.RegisterDao;
+import recipe.fwd.dao.loginDao;
 import recipe.fwd.vo.MemberVo;
 
 @Service
-public class RegisterServiceImpl implements RegisterService{
-		
+public class loginServiceImpl implements loginService{
+	
 	@Autowired
-	private RegisterDao registerDao;
+	private loginDao logindao;
 	
-	// 회원가입 인서트
+	// 로그인
 	@Override
-	public void insertReg(MemberVo memberVo) throws Exception{
-		registerDao.insertReg(memberVo);
+	public MemberVo login(MemberVo memberVo) throws Exception{
+		
+		return logindao.login(memberVo);
 	}
-	
-	
 	
 }
