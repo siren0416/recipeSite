@@ -32,7 +32,7 @@ public class registerController {
 		registerService.insertReg(memberVo);
 		System.out.println(memberVo.getM_pw());
 		
-		return "login";
+		return "loginpage";
 	}
 	
 	

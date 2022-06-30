@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="recipe.fwd.service.BoardMapper">
+	<select id="list" resultType="recipe.fwd.vo.BoardVo">
+		SELECT r_no, r_title, r_writer, r_date FROM reboard ORDER BY r_no DESC
+	</select>
+
+</mapper>

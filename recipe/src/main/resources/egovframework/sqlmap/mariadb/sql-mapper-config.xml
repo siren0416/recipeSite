@@ -6,6 +6,7 @@
 		<!-- <typeAlias alias="egovMap" type="org.egovframe.rte.psl.dataaccess.util.EgovMap"/> -->
 		<typeAlias alias="testVo" type="recipe.fwd.vo.TestVo"/>
 		<typeAlias alias="memberVo" type="recipe.fwd.vo.MemberVo"/>
+		<typeAlias alias="boardVo" type="recipe.fwd.vo.BoardVo"/>
 <!-- 		<typeAlias alias="searchVO" type="recipe.fwd.service.SampleDefaultVO"/>
 		<typeAlias alias="sampleVO" type="recipe.fwd.service.SampleVO"/> -->
     </typeAliases>

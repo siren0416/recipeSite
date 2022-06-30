@@ -96,7 +96,7 @@
                 <div class="form-group" id="divPhoneNumber">
                     <label for="inputPhoneNumber" class="col-lg-2 control-label">휴대폰 번호</label>
                     <div class="div_input">
-                        <input type="tel" name="m_phone" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
+                        <input type="tel" name="m_phone" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 포함해서 적어주세요" maxlength="15">
                     </div>
                 </div>
                 <div class="form-group">
@@ -124,7 +124,7 @@
 	
       
       
-      
+      <!-- 
          <script>
         
             $(function(){
@@ -146,12 +146,12 @@
                     }
                 });
             
-                $(".onlyNumber").keyup(function(event){
+                /* $(".onlyNumber").keyup(function(event){
                     if (!(event.keyCode >=37 && event.keyCode<=40)) {
                         var inputVal = $(this).val();
                         $(this).val(inputVal.replace(/[^0-9]/gi,''));
                     }
-                });
+                }); */
                 
                 //------- 검사하여 상태를 class에 적용
                 $('#id').keyup(function(event){
@@ -406,7 +406,7 @@
                 
             });
             
-        </script> 
+        </script>  -->
                 <!--// 본문 들어가는 부분 -->
             <hr/>
 </body>

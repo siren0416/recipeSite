@@ -3,15 +3,15 @@
 
 <mapper namespace="recipe.fwd.service.RegisterMapper">
 
-	<!-- 아이디 중복 검사 -->
+<!-- 	<아이디 중복 검사 
 	<select id="check_id" parameterType="String" resultType="int">
 		select count(*) from member where m_id = #{m_id}
 	</select>
 	
-	<!-- 이메일 중복 검사 -->
+	이메일 중복 검사
 	<select id="check_email" parameterType="String" resultType="int">
 		select count(*) from member where m_email = #{m_email}
-	</select>
+	</select> -->
 
 
 	<insert id="insertReg" parameterType="memberVo">

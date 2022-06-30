@@ -1,0 +1,25 @@
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+.container{
+	margin:auto;
+}
+.my_accountbox{
+	margin:50px auto;
+	display:flex;
+	width: 400px;
+	height: 400px;
+	background: white;
+	border-radius: 10px;
+	
+}
+
+.div_input > input{
+	width: 200px;
+}

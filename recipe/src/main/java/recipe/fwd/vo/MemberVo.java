@@ -97,8 +97,5 @@ public class MemberVo {
 				+ m_email + ", m_phone=" + m_phone + ", m_gender=" + m_gender + ", email_status=" + email_status
 				+ ", email_key=" + email_key + ", reg_date=" + reg_date + "]";
 	}
-	
-	
-	
-	
+		
 }
