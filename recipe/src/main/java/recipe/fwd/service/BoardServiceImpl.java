@@ -19,4 +19,10 @@ public class BoardServiceImpl implements BoardService{
 
 		return boardDao.list();
 	}
+	
+	@Override
+	public void boardinsert(BoardVo boardVo) throws Exception{
+		System.out.println("boardService");
+		boardDao.boardinsert(boardVo);
+	}
 }

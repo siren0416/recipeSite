@@ -20,7 +20,7 @@ public class loginServiceImpl implements loginService{
 	// 로그인
 	@Override
 	public MemberVo login(MemberVo memberVo) throws Exception{
-		
+		System.out.println("loginService");
 		return logindao.login(memberVo);
 	}
 	

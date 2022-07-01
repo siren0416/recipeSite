@@ -21,4 +21,10 @@ public class BoardDaoImpl implements BoardDao{
 		return mapper.list();
 	}
 		
+	public void boardinsert(BoardVo boardVo) throws Exception{
+		
+		System.out.println("boardDao");
+		BoardMapper mapper = sqlSession.getMapper(BoardMapper.class);
+		mapper.boardinsert(boardVo);
+	}
 }

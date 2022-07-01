@@ -9,11 +9,12 @@ public class BoardVo {
 	private String r_content;
 	private Date r_date;
 	private int r_viewcnt;
+	private int m_no;
 	public BoardVo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public BoardVo(int r_no, String r_title, String r_writer, String r_content, Date r_date, int r_viewcnt) {
+	public BoardVo(int r_no, String r_title, String r_writer, String r_content, Date r_date, int r_viewcnt, int m_no) {
 		super();
 		this.r_no = r_no;
 		this.r_title = r_title;
@@ -21,6 +22,7 @@ public class BoardVo {
 		this.r_content = r_content;
 		this.r_date = r_date;
 		this.r_viewcnt = r_viewcnt;
+		this.m_no = m_no;
 	}
 	public int getR_no() {
 		return r_no;
@@ -57,6 +59,12 @@ public class BoardVo {
 	}
 	public void setR_viewcnt(int r_viewcnt) {
 		this.r_viewcnt = r_viewcnt;
+	}
+	public int getM_no() {
+		return m_no;
+	}
+	public void setM_no(int m_no) {
+		this.m_no = m_no;
 	}
 	
 	

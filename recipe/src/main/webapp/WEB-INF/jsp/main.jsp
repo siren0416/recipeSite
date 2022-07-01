@@ -37,7 +37,7 @@
 			<li>
 				<div>
 					<div class="contents1">레시피 등록</div>
-					<div><button>등록하기</button></div>
+					<div><button onclick="location.href='boardinsert'">등록하기</button></div>
 				</div>
 			</li>
 		</ul>

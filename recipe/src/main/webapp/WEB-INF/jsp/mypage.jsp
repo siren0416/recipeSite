@@ -36,7 +36,7 @@
 			<!-- 오른쪽 퀵메뉴 -->
 			<ul class="nav">
 				<li><a href="main">HOME</a></li>
-				<li><a href="/">레시피 검색</a></li>
+				<li><a href="board">레시피 검색</a></li>
 				<li><a href="#">QNA</a></li>
 				<li><a href="mypage">MYPAGE</a></li>
 						<c:if test="${member == null }">

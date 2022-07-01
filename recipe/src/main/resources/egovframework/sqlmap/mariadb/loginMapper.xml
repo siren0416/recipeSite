@@ -5,7 +5,7 @@
 
 	<select id="login" resultType="memberVo">
 		SELECT * FROM member WHERE m_id = #{m_id} AND m_pw = #{m_pw}
-	
+			
 	</select>
 
 	<!-- 비밀번호 변경 -->

@@ -17,7 +17,7 @@ public class loginDaoImpl implements loginDao {
 	@Override
 	public MemberVo login(MemberVo memberVo) throws Exception{
 		loginMapper mapper = sqlSession.getMapper(loginMapper.class);
-		
+		System.out.println("loginDaoImpl");
 		return mapper.login(memberVo);
 	}
 	

@@ -15,8 +15,8 @@
 
 
 	<insert id="insertReg" parameterType="memberVo">
-		INSERT INTO member 
-		VALUES (#{m_id}, #{m_pw}, #{m_name}, #{m_email}, #{m_phone}, #{m_gender}, 'false' #{email_key}, now())
+		INSERT INTO member (m_id, m_pw, m_name, m_email, m_phone, m_gender, email_status, email_key, reg_date )
+		VALUES (#{m_id}, #{m_pw}, #{m_name}, #{m_email}, #{m_phone}, #{m_gender}, 'false', #{email_key}, SYSDATE())
 	</insert>
 
 

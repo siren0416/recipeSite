@@ -8,4 +8,6 @@ public interface BoardMapper {
 
 	public List<BoardVo> list() throws Exception;
 	
+	public void boardinsert(BoardVo boardVo) throws Exception;
+	
 }

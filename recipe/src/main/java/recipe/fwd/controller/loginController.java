@@ -34,11 +34,14 @@ public class loginController {
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(HttpServletRequest request, MemberVo memberVo, RedirectAttributes rttr) throws Exception {
 //  public String login(MemberVO memberVO, Model model, HttpSession session) throws Exception {
-//     System.out.println("postmapping");
+     System.out.println("postmapping");
 //     System.out.println("전달된 데이터 : " + memberVO);
   
      HttpSession session = request.getSession();
+     
      MemberVo lvo = loginService.login(memberVo);
+     
+     System.out.println("lvo : " + lvo);
      
      if (lvo == null) {            // 일치하지 않는 아이디, 비밀번호 입력했을 경우
         int result = 0;

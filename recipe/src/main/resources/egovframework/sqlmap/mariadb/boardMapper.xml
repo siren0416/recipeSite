@@ -5,5 +5,11 @@
 	<select id="list" resultType="recipe.fwd.vo.BoardVo">
 		SELECT r_no, r_title, r_writer, r_date FROM reboard ORDER BY r_no DESC
 	</select>
-
+	
+	
+	<insert id="boardinsert">
+		INSERT INTO reboard ( m_no, r_title, r_writer, r_content, r_date) VALUES (#{m_no}, #{r_title}, #{r_writer}, #{r_content}, SYSDATE())
+	</insert>
+	
+	
 </mapper>
