@@ -34,6 +34,15 @@ public class boardController {
 		return "board";
 	}
 	
+	// 게시판 조회
+	@RequestMapping(value="/boarddetail", method = RequestMethod.GET)
+	public String boarddetail(BoardVo boardVo, Model model) throws Exception{
+		System.out.println("detailcontroller");
+		model.addAttribute("boarddetail", boardService.boarddetail(boardVo.getM_no()));
+		
+		return "boarddetail";
+	}
+	
 	// 보드인서트 페이지
 	@RequestMapping(value="boardinsert", method= RequestMethod.GET)
 	public String boardinsertPage(Model model, MemberVo memberVo, HttpServletRequest request){
@@ -43,6 +52,8 @@ public class boardController {
 		Object member = session.getAttribute("member");
 		
 		model.addAttribute("member", member);
+		String m_no = (String)session.getAttribute("m_no");
+		System.out.println(m_no);
 		
 //		System.out.println("member : " + member);
 		
@@ -63,27 +74,48 @@ public class boardController {
 		return "redirect:/board";
 	}
 	
-	// 내가 등록한 레시피 페이지
 	
 	
 	// 내 게시판 불러오기
 	@RequestMapping(value = "/myboard", method = RequestMethod.GET)
-	public String myboardPage(Model model, HttpServletRequest request, MemberVo memberVo) {
+	public String myboardPage(Model model, HttpServletRequest request, BoardVo boardVo) throws Exception {
 		HttpSession session =  request.getSession();
 //		MemberVo memberVo = (MemberVo) session.getAttribute("member");
-		
-		
-		try {
-			request.setAttribute("m_no", session)
-			model.addAttribute("mylist", boardService.list());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-				
+
+		System.out.println("controller");
+		request.setAttribute("m_no", session);
+		String m_no = (String)session.getAttribute("m_no");
+			model.addAttribute("myboard", boardService.myboard(boardVo.getM_no()));
+			System.out.println(boardVo.getM_no());
 		return "myboard";
 	}
 	
-	
+	// 게시판 수정뷰
+		@RequestMapping(value = "/updateView", method = RequestMethod.GET)
+		public String updateView(BoardVo boardVo, Model model) throws Exception{
+			
+			model.addAttribute("update", boardService.boarddetail(boardVo.getM_no()));
+			System.out.println(boardVo.getM_no());
+			return "updateView";
+		}
+		
+		// 게시판 수정
+		@RequestMapping(value = "/update", method = RequestMethod.POST)
+		public String update(BoardVo boardVo) throws Exception{
+			
+			boardService.update(boardVo);
+			
+			return "redirect:/myboard";
+		}
+
+		// 게시판 삭제
+		@RequestMapping(value = "/delete", method = RequestMethod.POST)
+		public String delete(BoardVo boardVo) throws Exception{
+			
+			boardService.delete(boardVo.getM_no());
+			
+			return "redirect:/board";
+		}
 	
 	
 	

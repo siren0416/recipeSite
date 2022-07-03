@@ -30,7 +30,7 @@
 			</li>
 			<li>
 				<div>
-					<div class="contents1">내 레시피</div>
+					<div class="contents1"><a href="/myboard?m_no=${member.m_no}">내 레시피</a></div>
 					<div>등록된 레시피 갯수</div>
 				</div>
 			</li>

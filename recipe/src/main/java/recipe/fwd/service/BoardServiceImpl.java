@@ -16,7 +16,7 @@ public class BoardServiceImpl implements BoardService{
 	
 	@Override
 	public List<BoardVo> list() throws Exception {
-
+		
 		return boardDao.list();
 	}
 	
@@ -25,4 +25,33 @@ public class BoardServiceImpl implements BoardService{
 		System.out.println("boardService");
 		boardDao.boardinsert(boardVo);
 	}
+
+	@Override
+	public BoardVo boarddetail(int m_no) {
+		
+		try {
+			return boardDao.boarddetail(m_no);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	@Override
+	public List<BoardVo> myboard(int m_no) throws Exception {
+		
+		return boardDao.myboard(m_no);
+	}
+
+	@Override
+	public void update(BoardVo boardVo) throws Exception {
+		boardDao.update(boardVo);
+	}
+
+	@Override
+	public void delete(int m_no) throws Exception {
+		boardDao.delete(m_no);
+	}
+	
+	
 }

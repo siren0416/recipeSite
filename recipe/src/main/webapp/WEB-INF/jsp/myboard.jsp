@@ -15,7 +15,7 @@
 
 	<form action="/board/write" method="post">
 		<div class="table_box">
-			<table class="table">
+			<table class="table" style="border:1px solid">
 				<thead>
 					<tr>
 						<th>번호</th>
@@ -26,13 +26,16 @@
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${list }" var="list">
+					<c:forEach items="${myboard }" var="myboard">
 						<tr>
-							<td>${list.r_no }</td>
-							<td>${list.r_title }</td>
-							<td><fmt:formatDate value="${list.r_date}" pattern="yyyy-MM-dd"/> </td>
-							<td>${list.r_writer }</td>
-							<td>${list.r_viewcnt }</td>
+						
+							<td>${myboard.r_no }</td>
+							<td>
+								<a href="boarddetail?r_no=${myboard.r_no}"><c:out value="${myboard.r_title}" /></a>
+							</td>
+							<td><fmt:formatDate value="${myboard.r_date}" pattern="yyyy-MM-dd"/> </td>
+							<td>${myboard.r_writer }</td>
+							<td>${myboard.r_viewcnt }</td>
 						</tr>
 					</c:forEach>
 				</tbody>
